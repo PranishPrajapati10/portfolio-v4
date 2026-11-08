@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pranish Prajapati — Datacenter &amp; Systems Engineer | STACK Cyberpunk Developer Portfolio</title>
+  <meta name="description" content="Futuristic developer &amp; datacenter portfolio for Pranish Prajapati. Tier-3 datacenter operations, 24/7 NOC telemetry, and mission-critical network engineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300f2fe'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- Ambient Glow & Grid -->
+  <div class="ambient-glow"></div>
+  <div class="ambient-grid"></div>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Pranish Prajapati Portfolio Home">
+        <span class="logo-curly">{ }</span>
+        <span>STACK<span class="logo-dev">.DEV</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Contact Me &rarr;</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      
+      <!-- Hero Left: Typography & Actions -->
+      <div class="hero-left-content">
+        <div class="section-tag">
+          <span>⚡</span> Mission-Critical Infrastructure
+        </div>
+
+        <h1 class="hero-title">
+          Building Digital <br>
+          <span class="neon-gradient-text">Solutions</span>
+        </h1>
+
+        <p class="hero-sub">
+          Datacenter Operations Specialist &amp; Systems Engineer at <strong>Silver Lining Data Center</strong>. Dedicated to 24/7 NOC telemetry monitoring, Tier-3 rack architecture, fault-tolerant networks, and modern software tooling.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            View Projects
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            Get In Touch
+          </a>
+        </div>
+
+        <!-- Trust / Award Pill -->
+        <div class="hero-award-badge">
+          <span class="star-icon">&#9733;</span>
+          <span>Best NOC Operations &amp; Telemetry Award 2025 &bull; By <span class="source-brand">Silver Lining DC</span></span>
+        </div>
+      </div>
+
+      <!-- Hero Right: Circular Spinning Badge Developer Visual -->
+      <div class="hero-visual-wrap">
+        <div class="circular-badge-container">
+          
+          <!-- Outer Rotating Text Ring (Exact STACK Theme Replica) -->
+          <svg class="circular-text-svg" viewBox="0 0 400 400">
+            <defs>
+              <path id="textCirclePath" d="M 200, 200 m -155, 0 a 155,155 0 1,1 310,0 a 155,155 0 1,1 -310,0" fill="none" />
+            </defs>
+            <text>
+              <textPath href="#textCirclePath" startOffset="0%">
+                &bull; CREATIVE &bull; DESIGN &bull; DEVELOPMENT &bull; SYSTEM &bull; CODE &bull; NOC &bull;
+              </textPath>
+            </text>
+          </svg>
+
+          <!-- Dashed Neon Accent Ring -->
+          <div class="badge-neon-ring"></div>
+
+          <!-- Center Interactive Avatar Disc -->
+          <div class="badge-inner-avatar" id="avatar-disc" title="Click to toggle between Cyber Avatar and Real Photo">
+            <img src="assets/images/developer-avatar.svg" alt="Developer Avatar" class="avatar-illustration">
+            <img src="assets/images/hero-portrait.jpg" alt="Pranish Prajapati" class="avatar-real-photo">
+          </div>
+
+          <!-- Interactive Switch Pill -->
+          <button class="avatar-toggle-hint" id="avatar-toggle-btn">
+            Switch to Real Photo 📷
+          </button>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- METRICS & INTERACTIVE CODE BLOCK SECTION -->
+  <section class="stats-code-section" id="stats">
+    <div class="container stats-code-grid">
+      
+      <!-- Left: 2x2 Bento Metric Cards -->
+      <div class="metrics-2x2-grid">
+        
+        <!-- Metric 1 -->
+        <div class="metric-card">
+          <div class="metric-icon-box cyan">
+            <span>&lt;/&gt;</span>
+          </div>
+          <div class="metric-number" data-target="2" data-suffix="+">2+</div>
+          <div class="metric-label">Years of NOC &amp; Systems Operations</div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="metric-card">
+          <div class="metric-icon-box purple">
+            <span>📁</span>
+          </div>
+          <div class="metric-number" data-target="500" data-suffix="+">500+</div>
+          <div class="metric-label">Hardware &amp; Network Incidents Resolved</div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="metric-card">
+          <div class="metric-icon-box pink">
+            <span>👥</span>
+          </div>
+          <div class="metric-number" data-target="100" data-suffix="+">100+</div>
+          <div class="metric-label">Mission-Critical Servers &amp; Racks Monitored</div>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="metric-card">
+          <div class="metric-icon-box green">
+            <span>🛡️</span>
+          </div>
+          <div class="metric-number" data-target="100" data-suffix="%">100%</div>
+          <div class="metric-label">SLA Compliance &amp; Hardware Reliability</div>
+        </div>
+
+      </div>
+
+      <!-- Right: Cyberpunk Interactive Code Editor Window -->
+      <div class="code-window-card">
+        
+        <div class="code-window-header">
+          <div class="window-dots">
+            <span class="window-dot dot-red"></span>
+            <span class="window-dot dot-yellow"></span>
+            <span class="window-dot dot-green"></span>
+          </div>
+          <div class="window-tab">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+            <span>engineer.ts</span>
+          </div>
+          <button class="btn-copy-code" id="copy-code-btn" title="Copy code snippet">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <div class="code-window-body" id="code-body">
+<span class="syn-kw">class</span> <span class="syn-class">InfrastructureEngineer</span> {
+  <span class="syn-prop">name</span>: <span class="syn-class">string</span> = <span class="syn-str">"Pranish Prajapati"</span>;
+  <span class="syn-prop">role</span>: <span class="syn-class">string</span> = <span class="syn-str">"Datacenter &amp; NOC Engineer"</span>;
+  <span class="syn-prop">facility</span>: <span class="syn-class">string</span> = <span class="syn-str">"Silver Lining Data Center"</span>;
+  <span class="syn-prop">education</span>: <span class="syn-class">string</span> = <span class="syn-str">"B.I.M — Tribhuvan University"</span>;
+  
+  <span class="syn-prop">coreCompetencies</span>: <span class="syn-class">string</span>[] = [
+    <span class="syn-str">"10G SFP+ Core Routing &amp; Switching"</span>,
+    <span class="syn-str">"VLAN 802.1Q &amp; Router-on-a-Stick"</span>,
+    <span class="syn-str">"Dual A/B PDU &amp; Thermal Optimization"</span>,
+    <span class="syn-str">"24/7 Incident Triage &amp; Root-Cause RCA"</span>,
+    <span class="syn-str">"Linux / Windows Enterprise Systems"</span>
+  ];
+
+  <span class="syn-prop">hardWorker</span>: <span class="syn-class">boolean</span> = <span class="syn-bool">true</span>;
+  <span class="syn-prop">quickLearner</span>: <span class="syn-class">boolean</span> = <span class="syn-bool">true</span>;
+  <span class="syn-prop">tier3Certified</span>: <span class="syn-class">boolean</span> = <span class="syn-bool">true</span>;
+}</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & WORK HISTORY SECTION -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      
+      <!-- About Left: Bio & Timeline -->
+      <div class="about-left-col">
+        <div class="section-tag">
+          <span>//</span> Professional Background
+        </div>
+        
+        <h2 class="section-title">
+          Pranish <span class="neon-gradient-text">Prajapati</span>
+        </h2>
+
+        <p class="about-bio">
+          I am a dedicated Datacenter Technician with professional hands-on Network Operations Center (NOC) experience at <strong>Silver Lining Data Center</strong> in Kamalpokhari, Kathmandu. My day-to-day focus centers on continuous server telemetry monitoring, physical rack staging, power distribution (PDU), and prompt SLA escalation.
+        </p>
+
+        <!-- Work History Timeline -->
+        <div class="timeline-wrap">
+          
+          <!-- Item 1 -->
+          <div class="timeline-item active">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 &mdash; PRESENT</div>
+            <div class="timeline-role">Datacenter Operations &amp; NOC Incident Specialist</div>
+            <div class="timeline-company">Silver Lining Data Center &bull; Kamalpokhari, Kathmandu</div>
+            <div class="timeline-desc">
+              Monitoring 24/7 server telemetry, hardware health diagnostics, dual A/B PDU power feeds, cold aisle temperature regulation, and prompt Tier 1/2 escalations.
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2021 &mdash; 2025</div>
+            <div class="timeline-role">Bachelor of Information Management (BIM)</div>
+            <div class="timeline-company">Tribhuvan University &bull; Kathmandu, Nepal</div>
+            <div class="timeline-desc">
+              Integrated curriculum bridging enterprise network infrastructure, systems analysis, object-oriented software engineering, and database design.
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">LABS &amp; INDEPENDENT</div>
+            <div class="timeline-role">Network Engineering &amp; Systems Lab</div>
+            <div class="timeline-company">Cisco Packet Tracer, MikroTik, Linux Server</div>
+            <div class="timeline-desc">
+              Hands-on topology design including Router-on-a-Stick, inter-VLAN routing, ACLs, subnetting (VLSM/CIDR), and Wireshark deep packet inspection.
+            </div>
+          </div>
+
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="assets/Pranish_Prajapati_CV.pdf" download="Pranish_Prajapati_CV.pdf" class="btn btn-primary">
+            Download CV &#128229;
+          </a>
+          <button class="btn btn-secondary copy-email-action">
+            Copy Email Address
+          </button>
+        </div>
+
+      </div>
+
+      <!-- About Right: Futuristic Workstation & Telemetry Monitor -->
+      <div class="about-right-col">
+        <div class="workstation-visual-card">
+          <div class="monitor-frame">
+            
+            <div class="monitor-topbar">
+              <div class="status-live">
+                <span class="status-pulse-dot"></span>
+                <span>SILVER LINING DC TELEMETRY</span>
+              </div>
+              <div id="monitor-clock">UTC 00:00:00</div>
+            </div>
+
+            <div class="monitor-screen-content">
+              
+              <!-- Telemetry Tiles -->
+              <div class="telemetry-row">
+                <div class="telemetry-tile">
+                  <div class="telemetry-val">19.4&deg;C</div>
+                  <div class="telemetry-lbl">Cold Aisle</div>
+                </div>
+                <div class="telemetry-tile">
+                  <div class="telemetry-val" style="color: var(--neon-green);">A + B OK</div>
+                  <div class="telemetry-lbl">PDU Feeds</div>
+                </div>
+                <div class="telemetry-tile">
+                  <div class="telemetry-val" style="color: var(--neon-purple);">99.98%</div>
+                  <div class="telemetry-lbl">SLA Uptime</div>
+                </div>
+              </div>
+
+              <!-- Live Server Rack Simulation -->
+              <div class="rack-sim-box">
+                <div style="margin-bottom: 0.5rem; color: #cbd5e1; font-weight: 700; display: flex; justify-content: space-between;">
+                  <span>CLUSTER RACK ALPHA-01</span>
+                  <span style="color: var(--neon-cyan);">ONLINE</span>
+                </div>
+
+                <div class="rack-unit">
+                  <span>U42: CORE-SWITCH-SFP+</span>
+                  <div class="rack-leds">
+                    <span class="led green"></span>
+                    <span class="led blue"></span>
+                    <span class="led green"></span>
+                  </div>
+                </div>
+
+                <div class="rack-unit">
+                  <span>U40: AGGREGATION-ROUTER</span>
+                  <div class="rack-leds">
+                    <span class="led green"></span>
+                    <span class="led green"></span>
+                    <span class="led green"></span>
+                  </div>
+                </div>
+
+                <div class="rack-unit">
+                  <span>U36: COMPUTE-NODE-01</span>
+                  <div class="rack-leds">
+                    <span class="led green"></span>
+                    <span class="led amber"></span>
+                    <span class="led green"></span>
+                  </div>
+                </div>
+
+                <div class="rack-unit">
+                  <span>U34: COMPUTE-NODE-02</span>
+                  <div class="rack-leds">
+                    <span class="led green"></span>
+                    <span class="led green"></span>
+                    <span class="led blue"></span>
+                  </div>
+                </div>
+
+                <div class="rack-unit">
+                  <span>U01: PDU MAIN FEED A/B</span>
+                  <div class="rack-leds">
+                    <span class="led green"></span>
+                    <span class="led green"></span>
+                    <span class="led green"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Real Photo Teaser -->
+              <div style="margin-top: 1rem; border-radius: 10px; overflow: hidden; height: 110px; position: relative;">
+                <img src="assets/images/workstation.jpg" alt="Datacenter Workstation" style="width: 100%; height: 100%; object-fit: cover;">
+                <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(6,7,13,0.9), transparent); display: flex; align-items: flex-end; padding: 0.75rem;">
+                  <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--neon-cyan);">
+                    &bull; Active Operations Floor View
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services-section" id="services">
+    <div class="container">
+      
+      <div class="section-tag">
+        <span>//</span> Core Capabilities
+      </div>
+      <h2 class="section-title">
+        Services That <span class="neon-gradient-text">I Provide</span>
+      </h2>
+      <p class="section-subtitle">
+        High-availability infrastructure management, mission-critical network deployments, and systematic incident resolution.
+      </p>
+
+      <div class="services-grid">
+        
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><line x1="6" y1="6" x2="6.01" y2="6"></line><line x1="6" y1="18" x2="6.01" y2="18"></line></svg>
+          </div>
+          <h3 class="service-title">Datacenter Operations</h3>
+          <p class="service-desc">
+            Physical server staging, 19-inch rack mounting, structured Cat6/fiber cabling hygiene, cold-aisle thermal regulation, and dual A/B PDU monitoring.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag-item">Rack Staging</span>
+            <span class="service-tag-item">Thermal Mgmt</span>
+            <span class="service-tag-item">Dual PDU</span>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <h3 class="service-title">Network Engineering</h3>
+          <p class="service-desc">
+            VLAN 802.1Q segmentation, Router-on-a-Stick setup, subnetting (CIDR/VLSM), routing protocols, and Wireshark packet capture analysis.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag-item">VLAN 802.1Q</span>
+            <span class="service-tag-item">10G SFP+</span>
+            <span class="service-tag-item">Wireshark</span>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <h3 class="service-title">Incident &amp; SLA Triage</h3>
+          <p class="service-desc">
+            24/7 continuous alert triage, prompt escalation, comprehensive shift handover logs, and transparent root-cause analysis (RCA) reporting.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag-item">24/7 Triage</span>
+            <span class="service-tag-item">SLA 99.98%</span>
+            <span class="service-tag-item">RCA Reports</span>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          </div>
+          <h3 class="service-title">Systems &amp; Tooling</h3>
+          <p class="service-desc">
+            Linux and Windows Server maintenance, PHP backend applications, MySQL relational database architecture, and Git version control workflows.
+          </p>
+          <div class="service-tags">
+            <span class="service-tag-item">Linux / Win</span>
+            <span class="service-tag-item">PHP / MySQL</span>
+            <span class="service-tag-item">Git Versioning</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      
+      <div class="section-tag">
+        <span>//</span> Portfolio
+      </div>
+      <h2 class="section-title">
+        Featured <span class="neon-gradient-text">Works</span>
+      </h2>
+      <p class="section-subtitle">
+        A selection of enterprise datacenter infrastructure deployments, network switching topologies, and telemetry dashboards.
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="filter-row">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="datacenter">Datacenter</button>
+        <button class="filter-btn" data-filter="networking">Networking</button>
+        <button class="filter-btn" data-filter="systems">Systems</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1 -->
+        <div class="project-card" data-cat="datacenter">
+          <div class="project-img-box">
+            <img src="assets/images/work-1.jpg" alt="Datacenter Server Architecture" loading="lazy">
+            <span class="project-badge-pill">Tier-3 Facility</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Silver Lining DC &bull; Cluster Management</h3>
+            <p class="project-desc">
+              High-density server mounting, dual PDU distribution, hot/cold aisle thermal containment, and continuous environmental sensor monitoring.
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-list">
+                <span class="project-tech-tag">#RackStaging</span>
+                <span class="project-tech-tag">#DualPDU</span>
+              </div>
+              <a href="#contact" class="project-link-btn">
+                Inquire &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-cat="networking">
+          <div class="project-img-box">
+            <img src="assets/images/work-2.jpg" alt="10G SFP+ Core Switching" loading="lazy">
+            <span class="project-badge-pill">Network Core</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">10G SFP+ Core Switching Infrastructure</h3>
+            <p class="project-desc">
+              High-throughput fiber backbone deployment, VLAN 802.1Q trunking, Router-on-a-Stick segmentation, and packet inspection.
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-list">
+                <span class="project-tech-tag">#10GSFP+</span>
+                <span class="project-tech-tag">#VLAN802.1Q</span>
+              </div>
+              <a href="#contact" class="project-link-btn">
+                Inquire &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-cat="systems">
+          <div class="project-img-box">
+            <img src="assets/images/work-3.jpg" alt="Telemetry Diagnostics Hub" loading="lazy">
+            <span class="project-badge-pill">Systems &amp; Telemetry</span>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Automated Telemetry Triage &amp; Diagnostics</h3>
+            <p class="project-desc">
+              Consolidated NOC incident notification pipeline, hardware health thresholds, automated ticket dispatching, and handover reports.
+            </p>
+            <div class="project-footer">
+              <div class="project-tech-list">
+                <span class="project-tech-tag">#NOCTelemetry</span>
+                <span class="project-tech-tag">#HardwareDiag</span>
+              </div>
+              <a href="#contact" class="project-link-btn">
+                Inquire &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- REVIEWS / TESTIMONIALS SECTION -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      
+      <div class="section-tag">
+        <span>//</span> Recommendations
+      </div>
+      <h2 class="section-title">
+        What Teams <span class="neon-gradient-text">Say</span>
+      </h2>
+      <p class="section-subtitle">
+        Endorsements from datacenter operations teams, network engineers, and academic faculty.
+      </p>
+
+      <div class="reviews-grid">
+        
+        <!-- Review 1 -->
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote">
+            &ldquo;Pranish shows extraordinary diligence during 24/7 NOC shifts. His rapid response to hardware alerts and precise incident handovers ensure our enterprise clients remain unaffected.&rdquo;
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">SL</div>
+            <div>
+              <div class="review-name">Senior NOC Engineer</div>
+              <div class="review-role">Silver Lining Data Center</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote">
+            &ldquo;Strong understanding of Layer 2 VLAN segmentation and cabling hygiene. Every server rack staged under his supervision meets Tier-3 datacenter standard specifications.&rdquo;
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">DC</div>
+            <div>
+              <div class="review-name">Infrastructure Lead</div>
+              <div class="review-role">Facility Operations</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="review-quote">
+            &ldquo;Combines deep network engineering knowledge with software development skills from his BIM degree. A reliable, methodical, and proactive engineer.&rdquo;
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">TU</div>
+            <div>
+              <div class="review-name">Systems Faculty</div>
+              <div class="review-role">Tribhuvan University</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      
+      <div class="contact-card-wrap">
+        <div class="section-tag">
+          <span>//</span> Get In Touch
+        </div>
+        <h2 class="contact-title">
+          Let's Build &amp; Safeguard <br>
+          <span class="neon-gradient-text">Next-Gen Infrastructure</span>
+        </h2>
+        <p class="contact-sub">
+          Available for datacenter operations, NOC monitoring, network engineering, and enterprise systems opportunities.
+        </p>
+
+        <div class="contact-actions-row">
+          <button class="btn btn-primary copy-email-action">
+            Copy Email Address &rarr;
+          </button>
+          <a href="assets/Pranish_Prajapati_CV.pdf" download="Pranish_Prajapati_CV.pdf" class="btn btn-secondary">
+            Download CV &#128229;
+          </a>
+          <a href="https://www.linkedin.com/in/pranish-prajapati-461649366/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            LinkedIn Profile &nearr;
+          </a>
+        </div>
+
+        <div class="contact-meta-row">
+          <div class="meta-item">
+            <span>✉️</span>
+            <a href="#" class="copy-email-action">pranishprajapati721@gmail.com</a>
+          </div>
+          <div class="meta-item">
+            <span>📍</span>
+            <span>Kathmandu Valley, Nepal</span>
+          </div>
+          <div class="meta-item">
+            <span>⚡</span>
+            <span style="color: var(--neon-cyan);">24/7 Shift / Full-time Available</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      
+      <a href="#hero" class="brand-logo" style="font-size: 1.15rem;">
+        <span class="logo-curly">{ }</span>
+        <span>STACK<span class="logo-dev">.DEV</span></span>
+      </a>
+
+      <div class="footer-copy">
+        &copy; 2026 Pranish Prajapati. All rights reserved. Designed with Cyberpunk Neon Aesthetic.
+      </div>
+
+      <div class="footer-nav">
+        <a href="#hero" class="footer-link">Home</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#services" class="footer-link">Services</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="https://github.com/PranishPrajapati10" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div id="toast-notice" class="toast-notice"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
